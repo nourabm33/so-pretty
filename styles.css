@@ -156,6 +156,9 @@ h1, h2, h3 { font-family: var(--serif); color: var(--brown); line-height: 1.02; 
 .dog-content p:not(.eyebrow), .dog-content li { color: var(--muted); }
 .dog-content ul { margin: auto 0 0; padding: 18px 0 0; list-style: none; display: grid; gap: 7px; }
 .dog-content li::before { content: "—"; color: var(--gold); margin-right: 8px; }
+.dog-content ul.award-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.award-badges li { position: relative; padding: 7px 14px 7px 30px; font-size: 0.74rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--brown); background: var(--cream); border: 1px solid rgba(200, 160, 77, 0.45); border-radius: 999px; line-height: 1.25; }
+.award-badges li::before { content: "\2726"; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); margin: 0; color: var(--gold); font-size: 0.8rem; }
 
 .certificate-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .certificate-card, .gallery-item { border: 0; background: transparent; padding: 0; text-align: left; color: inherit; }
