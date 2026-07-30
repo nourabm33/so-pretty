@@ -99,7 +99,7 @@ const translations = {
     "contact.formPhone": "Telefono",
     "contact.message": "Messaggio",
     "contact.submit": "Invia richiesta",
-    "contact.note": "Il modulo prepara un messaggio email: inserisci l'indirizzo ufficiale appena disponibile.",
+    "contact.note": "Il modulo aprirà la tua app email con un messaggio pronto per soprettypoodle@yahoo.it.",
     "footer.description": "Allevamento familiare ENCI/FCI di Barboni Toy e Nani, dedicato a bellezza, salute e selezione responsabile.",
     "footer.navigation": "Navigazione",
     "footer.legal": "Legale",
@@ -225,7 +225,7 @@ const translations = {
     "contact.formPhone": "Phone",
     "contact.message": "Message",
     "contact.submit": "Send request",
-    "contact.note": "The form prepares an email message: add the official address once available.",
+    "contact.note": "The form opens your email app with a message ready for soprettypoodle@yahoo.it.",
     "footer.description": "ENCI/FCI family kennel for Toy and Miniature Poodles, dedicated to beauty, health and responsible selection.",
     "footer.navigation": "Navigation",
     "footer.legal": "Legal",
@@ -408,9 +408,9 @@ function setupContactForm() {
     const subject = encodeURIComponent("So Pretty - richiesta informazioni");
     const body = encodeURIComponent(`Nome: ${data.get("name") || ""}\nEmail: ${data.get("email") || ""}\nTelefono: ${data.get("phone") || ""}\n\nMessaggio:\n${data.get("message") || ""}`);
     note.textContent = document.documentElement.lang === "en"
-      ? "Add the official email address in the website code to enable direct sending."
-      : "Aggiungi l'indirizzo email ufficiale nel sito per abilitare l'invio diretto.";
-    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+      ? "Opening your email app to send the message to So Pretty."
+      : "Apertura dell'app email per inviare il messaggio a So Pretty.";
+    window.location.href = `mailto:soprettypoodle@yahoo.it?subject=${subject}&body=${body}`;
   });
 }
 
